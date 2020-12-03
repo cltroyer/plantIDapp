@@ -1,0 +1,83 @@
+/* CSS for all added content */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body {
+  background: url("images/mountain_path.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 25px;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+.container {
+background-image: url("images/zipimage.png");
+border-style: groove;
+height: 290px;
+width: 310px;
+display: flex;
+flex-direction: row;
+position: absolute;
+left: 590px;
+top: 0px;
+right: none;
+bottom: none;
+z-index: none;
+}
+
+.zipimage {
+  margin: 10px;
+  border-style: groove;
+  position: absolute;
+  left: 190px;
+  top: 120px;
+  right: none;
+  bottom: none;
+  z-index: 0;
+}
+
+.zip {
+  background-image: url("images/zipimage.png");
+  height: 75px;
+  width: 255px;
+  margin: 10px;
+  position: absolute;
+  left: 200px;
+  top: 120px;
+  right: none;
+  bottom: none;
+  z-index: 1;
+}
+
+.edible {
+  margin: 25px;
+  position: absolute;
+  left: 1200px;
+  top: 300px;
+  right: none;
+  bottom: none;
+  z-index: none;
+}
+
+.danger {
+  margin: 30px 0px 0px 0px;
+  position: absolute;
+  left: -1100px;
+  top: -25px;
+  right: none;
+  bottom: none;
+  z-index: none;
+}
