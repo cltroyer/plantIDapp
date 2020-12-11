@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body {
+  background: url("images/red velvet.png") no-repeat center center fixed;
+  display: flex;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  margin: 40px;
+  color: white;
+  text-align: center;
+  border: white;
+  border-style: groove;
+  border-width: 10px;
+  justify-content: center;
+  background-color: red;
+  height: 20000px;
+  width: 900px;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  position: absolute;
+  left: 300px;
+  right: none;
+  top: 200;
+  bottom: none;
+  z-index: 0;
+}
+
+.zip {
+  display: flex;
+  height: 75px;
+  width: 255px;
+  margin: 10px;
+  position: absolute;
+  left: 650px;
+  top: 170px;
+  right: none;
+  bottom: none;
+  z-index: 1;
+}
+
+.resultitem {
+  margin: 100px 0px 0px 0px;
+  background-color: red;
+  padding: auto 0px 0px 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 620px;
+  top: 200px;
+  right: none;
+  bottom: none;
+  z-index: 0;
+}
