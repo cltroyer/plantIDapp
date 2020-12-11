@@ -81,3 +81,27 @@ z-index: none;
   bottom: none;
   z-index: none;
 }
+
+.col-sm-one {
+    border: none;
+}
+.col-sm-three {
+    border: none;
+}
+.col-sm-two {
+    border-color: navajowhite;
+    color: white;
+    background-color:green;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    justify-content: center;
+    column-width: 100rem;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title {
+    text-align: center;
+}
+.findme {
+    align-content: flex-start;
+}
