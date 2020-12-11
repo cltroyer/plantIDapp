@@ -55,13 +55,13 @@ var wgs_states = {
 function initMap () {
     console.log('something')
     var form=document.getElementById('searchform')
-form.addEventListener('submit', handlesearch)
+  form.addEventListener('submit', handlesearch)
 }
 // function that handles taking user input: state and passing that through Google Maps to identify location
 function handlesearch (event) {
     event.preventDefault();
-    console.log(event.target.elements.findme.value)
-    var search=event.target.elements.findme.value
+    console.log(event.target.elements.search.value)
+    var search=event.target.elements.search.value
     var geocoder= new google.maps.Geocoder();
     geocoder.geocode({
            address: search, 
@@ -105,6 +105,13 @@ function Treflesearch() {
         `
       })
       resultsDiv.innerHTML = newHTML;
+      //add button on load of cards
+      let addButton =`<button id="PDF">Print</button>`
+      document.getElementById('button').innerHTML = addButton
     });
 
 }
+// Print screen
+document.getElementById("PDF").addEventListener("click", function() {
+  window.print()
+  })

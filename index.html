@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <title>idBotany</title>
   </head>
+  <body>
+    <div id="contnet"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-one"> 
@@ -20,14 +23,17 @@
        <!--User Inputs zipcode of area in which they want to identify plants-->
         <form id="searchform">
           <label for="findme"> Find My Location: </label><br>
-          <input type="text" id="findme" name="findme" placeholder="enter your state"><br>
+          <input type="text" id="findme" name="search" placeholder="enter your state"><br>
           <input type="submit" value="Submit">
         </form>
+
+        <a href="./Dangerous.html">Toxic Plantology</a>
+
         <div id='results'></div>
+        <div id="button"></div>
       </div>
       </div>
       <div class="col-sm-three">
-   
       </div>
     </div>
   </div>
@@ -40,5 +46,6 @@
     <script src="geosearch.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-JqNESni1Tm4X3UVoR-Je8Y3vonryE&callback=initMap"
     type="text/javascript"></script>
+    <script></script>
   </body>
 </html>
