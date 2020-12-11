@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Trefle Example</h1>
+
+  <!--<form id="searchForm">
+    <button type="submit">Search</button>
+  </form> -->
+
+<!--Modified searchForm to allow for "text" input for search-->
+<form id="searchForm">
+    <label for="inputSearch">Search for Plants by State</label>
+    <input id="inputSearch" name="inputSerch" type="text" value="">
+    <input id="submit" type="submit" value="Submit">
+</form>
+<!-- The following script will allow the user to input the "US State" name in the
+input text field. If the input text value is a "US State, (i.e "Texas" or "texas"), assign the value to
+its respective trefle.js API call function by "US State", obtain the plant data, and output the results
+to the user's HMI. The fetch URL in each API call function is modified only by thier respective "US State".
+50 trefle.js API call functions will be build for all 50 "US States"-->
+<script>
+// Declare the varialbles required for the Texas search.
+let value="";
+let Texas;
+let texas;
+
+/* If the text field input equals "Texas" or "texas" and the Submit button is clicked, assign the input
+   to the TexasSearch() trefle API call function and obtain the data. */
+if (value = "Texas" || "texas") {
+  "Texas" = TexasSearch();
+  "texas" = TexasSearch();
+
+// Output the results to the user's HMI Screen.
+document.getElementById("results").innerHTML = TexasSearch();
+}
+
+let value="";
+let Florida;
+let florida;
+
+if (value = "Florida" || "florida") {
+  "Florida" = FloridaSearch();
+  "florida" = FloridaSearch();
+
+document.getElementById("results").innerHTML = FloridaSearch();
+
+}
+
+let value="";
+let Georgia;
+let georgia;
+
+if (value = "Georgia" || "georgia") {
+  "Georgia" = GeorgiaSearch();
+  "georgia" = GeorgiaSearch();
+
+document.getElementById("results").innerHTML = GeorgiaSearch();
+}
+</script>
+
+  <div id="results">
+
+  </div>
+
+  <script src="./trefle.js"></script>
+</body>
+</html>

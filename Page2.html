@@ -1,0 +1,46 @@
+<div class="danger">
+    <div class="card" style="width: 400px;">
+  <img src="images/Dangerous Plants.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Dangerous Plants</h5>
+    <p class="card-text">Click here to go to the list of dangerous plants</p>
+    <a href="http://www.example.org" target="_blank" class="btn btn-danger">Dangerous Plants</a>
+  </div>
+
+  <div class="edible">
+    <div class="card" style="width: 400px;">
+  <img src="images/Edible_plants.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Edible Plants</h5>
+    <p class="card-text">Click here to go to the list of edible plants</p>
+    <a href="http://www.example.org" target="_blank" class="btn btn-success">Edible Plants</a>
+  </div>
+
+<!--code Lachlan did in class
+  
+  function handleSearch(event) {
+  event.preventDefault();
+
+  fetch(https://dc-2020-09-trefle-proxy.herokuapp.com/api/v1/distributions/geo/plants?filter_not[edible_part]=null`)
+    .then(res => res.json())
+    .then(apiResponse => {
+      const resultsDiv = document.getElementById('results')
+      let newHTML = ''
+      apiResponse.data.forEach(function(plant) {
+        newHTML += `
+          <div>
+            <h2>${plant.common_name}</h2>
+            <h3>${plant.scientific_name}</h3>
+            <img width="150" src="${plant.image_url}" />
+          </div>
+        `
+      })
+      resultsDiv.innerHTML = newHTML;
+    });
+}
+
+const searchForm = document.getElementById('searchForm');
+searchForm.addEventListener('submit', handleSearch); -->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+type="text/javascript"></script>
