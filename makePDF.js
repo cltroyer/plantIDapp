@@ -12,5 +12,5 @@ document.getElementById("PDF").addEventListener("click", function() {
     });
     
     // Save the PDF
-    doc.save('sample-document.pdf');
+    doc.save('Plants.pdf');
 })
