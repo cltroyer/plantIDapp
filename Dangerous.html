@@ -13,18 +13,26 @@
 </head>
 <body>
 
-  <div class="item"><h1>Toxic Plantology</h1><div>
-   <div class="zip">
-   <form id="searchForm">
-     Search Plants by State:<br />
-     <input type="search" name="search" placeholder="Enter State" />
-     <button type="submit">Search</button>
-   </form>
-  </div>
-  <div class="resultitem">
-   <div id="results">
-  </div>
-</div>
+  <div class="item">
+    <h1>Toxic Plantology</h1>
+    <div class="zip">
+    <form id="searchform">
+      Search Plants by State:<br />
+      <input type="search" name="search" placeholder="Enter State" />
+      <button type="submit">Search</button>
+    </form>
 
-  <script src="./Dangerous.js"></script>
+    </div>
+
+    <a href="./Dangerous.html">Toxic Plantology</a>
+    
+    <div class="resultitem">
+      <div id="results">
+      </div>
+    </div>
+  </div>
+
+  <script src="./geosearch.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-JqNESni1Tm4X3UVoR-Je8Y3vonryE&callback=initMap" type="text/javascript"></script>
 </body></html>
