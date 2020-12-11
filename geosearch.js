@@ -105,6 +105,13 @@ function Treflesearch() {
         `
       })
       resultsDiv.innerHTML = newHTML;
+      //add button on load of cards
+      let addButton =`<button id="PDF">Print</button>`
+      document.getElementById('button').innerHTML = addButton
     });
 
 }
+// Print screen
+document.getElementById("PDF").addEventListener("click", function() {
+  window.print()
+  })
